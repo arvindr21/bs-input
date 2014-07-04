@@ -1,0 +1,67 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+Element providing solution to no problem in particular.
+
+##### Example
+
+    <bs-input></bs-input>
+
+@element bs-input
+@blurb Element providing solution to no problem in particular.
+@status alpha
+@homepage http://arvindr21.github.io/bs-input
+-->
+<polymer-element name="bs-input" attributes="type,value,placeholder">
+
+  <template>
+
+    <link rel="stylesheet" href="bs-input.css" />
+
+    <input type="{{type}}" class="form-control" placeholder="{{placeholder}}" value="{{value}}">
+  </template>
+
+  <script>
+  Polymer('bs-input', {
+    /**
+     * The `type` attribute specifies the type of the input element.
+     *
+     * @attribute type
+     * @type string
+     */
+    type: '',
+
+    /**
+     * The `value` attribute specifies the value of the input element of applicable.
+     *
+     * @attribute value
+     * @type string
+     */
+    value: '',
+
+    /**
+     * The `placeholder` attribute specifies the placeholder of the input element.
+     *
+     * @attribute placeholder
+     * @type string
+     */
+    type: '',
+
+    ready: function() {
+      
+    },
+
+    /**
+     * The `val` method return the value of the input element.
+     *
+     * @method val
+     * @return {String} Returns the value of the input element.
+     */
+    val: function() {
+      return this.value ? this.value : '';
+    }
+
+  });
+  </script>
+
+</polymer-element>
