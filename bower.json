@@ -1,0 +1,7 @@
+{
+  "name": "bs-input#gh-pages",
+  "private": true,
+  "dependencies": {
+    "bs-input": "arvindr21/bs-input#master"
+  }
+}

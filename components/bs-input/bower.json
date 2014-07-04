@@ -1,0 +1,9 @@
+{
+  "name": "bs-input",
+  "version": "0.0.1",
+  "keywords": "bootstrap, input, bs-input, polymer, web-components",
+  "main": "bs-input.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.1"
+  }
+}
